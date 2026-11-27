@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T22:35:26-06:00",
+ "updated": "2026-11-26T23:05:52-06:00",
  "draws": {
   "m": {
    "status": "Octavos en juego",
@@ -14,15 +14,16 @@
        "sa": 1,
        "b": "Ruiz / García",
        "court": "Estadio",
-       "time": "Comienza pronto",
-       "sb": 13
+       "sb": 13,
+       "score": "0-0",
+       "live": true
       },
       {
        "a": "Sintes / Zamora",
        "b": "Valenzuela / Gil",
        "court": "5ta Avenida",
        "live": true,
-       "score": "3-0"
+       "score": "6-3 2-2"
       },
       {
        "a": "González / Campagnolo",
@@ -31,7 +32,7 @@
        "court": "Mifel",
        "sb": 11,
        "live": true,
-       "score": "3-3"
+       "score": "5-7 0-0"
       },
       {
        "a": "Jiménez / Chozas",
@@ -39,8 +40,8 @@
        "sb": 4,
        "court": "Caliente",
        "sa": 15,
-       "live": true,
-       "score": "3-6 3-4"
+       "score": "3-6 4-6",
+       "w": "b"
       },
       {
        "a": "Stupaczuk / Sanz",
@@ -86,7 +87,10 @@
      "day": "Viernes 27 nov · desde las 16:00",
      "matches": [
       {},
-      {},
+      {
+       "b": "Navarro / Di Nenno",
+       "sb": 4
+      },
       {
        "court": "Caliente",
        "a": "Libaak / Alfonso",
@@ -299,7 +303,7 @@
    ]
   },
   "w": {
-   "status": "Octavos en juego",
+   "status": "Cuartos · Viernes 27 nov",
    "rounds": [
     {
      "key": "r16",
@@ -312,8 +316,8 @@
        "court": "Estadio",
        "sa": 1,
        "sb": 13,
-       "score": "3-6 6-3 5-2",
-       "live": true
+       "score": "3-6 6-3 6-3",
+       "w": "a"
       },
       {
        "a": "Caldera / Goenaga",
@@ -387,7 +391,10 @@
       {
        "court": "Estadio",
        "b": "Caldera / Goenaga",
-       "sb": 9
+       "sb": 9,
+       "a": "Brea / Triay",
+       "sa": 1,
+       "time": "16:00"
       },
       {
        "court": "Caliente",
@@ -411,7 +418,7 @@
        "sa": 6,
        "b": "Josemaría / González",
        "sb": 2,
-       "time": "16:00"
+       "time": "2º turno"
       }
      ]
     },
