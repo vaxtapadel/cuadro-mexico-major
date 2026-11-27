@@ -1,5 +1,7 @@
 name: Publicar sitio
 
+# Publica index.html, data.json y los logos en GitHub Pages.
+
 on:
   workflow_dispatch:
   push:
