@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T00:26:49-06:00",
+ "updated": "2026-11-27T00:32:36-06:00",
  "draws": {
   "m": {
-   "status": "Octavos en juego",
+   "status": "Cuartos · Viernes 27 nov",
    "rounds": [
     {
      "key": "r16",
@@ -15,15 +15,15 @@
        "b": "Ruiz / García",
        "court": "Estadio",
        "sb": 13,
-       "score": "6-1 6-7 5-0",
-       "live": true
+       "score": "6-1 6-7 6-0",
+       "w": "a"
       },
       {
        "a": "Sintes / Zamora",
        "b": "Valenzuela / Gil",
        "court": "5ta Avenida",
-       "live": true,
-       "score": "6-3 6-7 2-5"
+       "score": "6-3 6-7 2-6",
+       "w": "b"
       },
       {
        "a": "González / Campagnolo",
@@ -86,7 +86,13 @@
      "name": "Cuartos",
      "day": "Viernes 27 nov · desde las 16:00",
      "matches": [
-      {},
+      {
+       "a": "Tapia / Coello",
+       "sa": 1,
+       "b": "Valenzuela / Gil",
+       "court": "Estadio",
+       "time": "16:00"
+      },
       {
        "b": "Navarro / Di Nenno",
        "sb": 4,
@@ -109,7 +115,7 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "time": "16:00"
+       "time": "2º turno"
       }
      ]
     },
