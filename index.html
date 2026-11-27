@@ -3,84 +3,116 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cuadro México Major</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<title>México Major 2026 · Cuadro en vivo</title>
+<meta name="description" content="Cuadro en vivo del Premier Padel México Major 2026, presentado por Vaxta Padel y Siux.">
+<link rel="icon" href="assets/vaxta.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 <style>
-/* VOICE: marcador de estadio, directo y deportivo.
-   IDEA: la pizarra del cuadro oficial pintada sobre la pista azul de pádel.
-   PICTURE: el propio cuadro (octavos → final) ocupa la primera pantalla.
-   COLOUR and TYPE: azul pista, líneas blancas, amarillo pelota; Barlow Condensed + Barlow.
-   LAYOUT: título breve arriba, cuadro en columnas con desplazamiento lateral, rondas previas debajo. */
-:root{color-scheme:light dark;--bg:light-dark(#1d4f9c,#0b1f3f);--court:light-dark(#2563b8,#13305e);--line:rgba(255,255,255,.9);--ink:#fff;--soft:rgba(255,255,255,.72);--card:light-dark(#fff,#16294a);--cink:light-dark(#0b1f3f,#eef3ff);--cmute:light-dark(#5a6b86,#9fb0cf);--ball:#e3f53b;--live:#ff5a4e}
-:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+/* VOICE: marca deportiva premium, sobria y nocturna, como el sitio de Vaxta.
+   IDEA: una cancha panorámica de noche: cristal, líneas finas y luz de estadio sobre negro.
+   PICTURE: el cuadro mismo, sobre una banda verde petróleo con las líneas de la pista.
+   COLOUR and TYPE: negro #0b0b0c, carbón #141b21, petróleo #00434e, blanco y gris #9aa4a9; Urbanist.
+   LAYOUT: logos arriba, título y pestañas, cuadro a todo lo ancho con scroll lateral, rondas previas y pie. */
+:root{color-scheme:dark;--bg:#0b0b0c;--card:#141b21;--card2:#1a232a;--teal:#00434e;--teal2:#00606f;--glow:#4fc3cf;--ink:#fff;--mute:#9aa4a9;--line:rgba(255,255,255,.09);--live:#ff4d4d}
 *{box-sizing:border-box;min-width:0}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif;overflow-x:clip}
-.band{padding:clamp(22px,4vw,48px) max(5vw,16px)}
-h1,h2,.rnd h3{font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;margin:0}
-h1{font-size:clamp(32px,6vw,50px);line-height:1.05;text-wrap:balance}
-.sub{color:var(--soft);margin:6px 0 0}
-.status{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:14px;font-size:15px}
-.pill{display:inline-flex;align-items:center;gap:8px;background:var(--ball);color:#0b1f3f;font-weight:600;border-radius:999px;padding:4px 12px}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--live)}
-@media(prefers-reduced-motion:no-preference){.dot{animation:p 1.4s infinite}@keyframes p{50%{opacity:.25}}}
-.upd{color:var(--soft)}
-.courtwrap{background:var(--court);border-top:3px solid var(--line);border-bottom:3px solid var(--line);position:relative}
-.courtwrap::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent calc(50% - 1px),rgba(255,255,255,.18) calc(50% - 1px),rgba(255,255,255,.18) calc(50% + 1px),transparent calc(50% + 1px));pointer-events:none}
-.nav{display:flex;gap:8px;justify-content:flex-end;padding:12px max(5vw,16px) 0;position:relative}
-.nav button{min-width:44px;min-height:44px;border-radius:10px;border:2px solid var(--line);background:transparent;color:#fff;font:600 20px Barlow;cursor:pointer}
-.nav button:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
-.bracket{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(5vw,16px);gap:18px;padding:12px max(5vw,16px) 26px;position:relative;scrollbar-width:thin}
-.rnd{flex:0 0 min(290px,82vw);scroll-snap-align:start;display:flex;flex-direction:column}
-.rnd h3{font-size:22px;letter-spacing:.01em}
-.rnd .day{font-size:14px;color:var(--soft);margin-bottom:10px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Urbanist,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 max(5vw,16px)}
+.brand{display:flex;align-items:center;gap:clamp(14px,3vw,26px);padding:22px 0 0;flex-wrap:wrap}
+.brand img{display:block;height:auto}
+.brand .vx{width:clamp(74px,12vw,104px)}
+.brand .sx{width:clamp(84px,13vw,118px)}
+.brand .sep{width:1px;align-self:stretch;min-height:34px;background:var(--line)}
+.brand .pres{color:var(--mute);font-size:14px;font-weight:500}
+header .wrap{padding-bottom:26px}
+h1{font-weight:800;font-size:clamp(34px,6.4vw,54px);line-height:1.02;letter-spacing:-.01em;margin:26px 0 0;text-wrap:balance}
+h1 span{font-weight:300}
+.sub{color:var(--mute);margin:8px 0 0;font-size:16px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:22px}
+.tabs{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{min-height:40px;padding:0 20px;border:0;border-radius:999px;background:transparent;color:var(--mute);font:600 15px Urbanist,sans-serif;cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:#0b0b0c}
+.tabs button:focus-visible,.nav button:focus-visible,summary:focus-visible{outline:2px solid var(--glow);outline-offset:2px}
+.status{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#fff}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 0 4px rgba(255,77,77,.18)}
+@media(prefers-reduced-motion:no-preference){.dot{animation:p 1.6s infinite}@keyframes p{50%{opacity:.3}}}
+.upd{color:var(--mute)}
+.court{position:relative;background:linear-gradient(180deg,var(--teal) 0%,#00303a 100%);border-block:1px solid rgba(255,255,255,.14);overflow:hidden}
+.court::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+ linear-gradient(90deg,transparent calc(50% - 1px),rgba(255,255,255,.10) calc(50% - 1px),rgba(255,255,255,.10) calc(50% + 1px),transparent calc(50% + 1px)),
+ linear-gradient(180deg,transparent 30%,rgba(255,255,255,.06) 30%,rgba(255,255,255,.06) calc(30% + 1px),transparent calc(30% + 1px),transparent 70%,rgba(255,255,255,.06) 70%,rgba(255,255,255,.06) calc(70% + 1px),transparent calc(70% + 1px))}
+.court::after{content:"";position:absolute;left:50%;top:-40%;width:90%;height:80%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(79,195,207,.18),transparent);pointer-events:none}
+.nav{position:relative;z-index:1;display:flex;gap:8px;justify-content:flex-end;padding:14px max(5vw,16px) 0;max-width:1240px;margin:0 auto}
+.nav button{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.18);color:#fff;font:600 20px Urbanist;cursor:pointer}
+.bracket{position:relative;z-index:1;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(5vw,16px);padding:10px max(5vw,16px) 30px;max-width:1240px;margin:0 auto;scrollbar-width:thin}
+.rnd{flex:0 0 min(282px,84vw);scroll-snap-align:start;display:flex;flex-direction:column}
+.rnd h3{font-size:22px;font-weight:800;margin:0}
+.rnd .day{font-size:13px;color:rgba(255,255,255,.7);margin:2px 0 12px}
 .col{flex:1;display:flex;flex-direction:column;justify-content:space-around;gap:10px}
-.m{background:var(--card);color:var(--cink);border-radius:12px;box-shadow:0 3px 0 rgba(0,0,0,.18);overflow:hidden}
-.m.live{box-shadow:0 0 0 3px var(--live)}
-.t{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:8px 12px;font-size:15px}
-.t+.t{border-top:1px solid light-dark(#e3e8f1,#24375a)}
+.m{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 24px -14px rgba(0,0,0,.7)}
+.m.live{border-color:rgba(255,77,77,.6);box-shadow:0 0 0 1px rgba(255,77,77,.35),0 10px 24px -14px rgba(0,0,0,.7)}
+.t{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 14px;font-size:15px;font-weight:500}
+.t+.t{border-top:1px solid var(--line)}
 .t .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.t.win .n{font-weight:700}
-.t.lose{color:var(--cmute)}
-.t.tbd .n{color:var(--cmute);font-style:italic}
-.seed{font-size:12px;color:var(--cmute);margin-right:4px}
-.sc{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;letter-spacing:.04em}
-.ball{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--ball);box-shadow:inset -2px -2px 0 rgba(0,0,0,.15);margin-right:6px;vertical-align:1px}
-.tag{font-size:12px;padding:2px 12px 6px;color:var(--cmute)}
-.m.live .tag{color:var(--live);font-weight:600}
-.champ{margin-top:14px;text-align:center;border:3px solid var(--ball);border-radius:14px;padding:14px 10px}
-.champ b{display:block;font:700 26px "Barlow Condensed",sans-serif;color:var(--ball)}
-.prev h2{font-size:30px;margin-bottom:12px}
-details{background:rgba(255,255,255,.08);border-radius:12px;margin-bottom:12px}
+.t.win .n{font-weight:800}
+.t.lose{color:var(--mute)}
+.t.tbd .n{color:var(--mute);font-style:italic;font-weight:400}
+.seed{font-size:11px;color:var(--mute);margin-right:5px;font-weight:600}
+.sc{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700;letter-spacing:.06em}
+.ball{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--glow);margin-right:7px;vertical-align:2px}
+.tag{font-size:12px;padding:0 14px 8px;color:var(--mute)}
+.m.live .tag{color:#ff8080;font-weight:600}
+.champ{margin-top:14px;text-align:center;border:1px solid rgba(255,255,255,.5);border-radius:16px;padding:16px 10px;background:rgba(0,0,0,.2);font-size:13px;color:rgba(255,255,255,.75)}
+.champ b{display:block;font-weight:800;font-size:24px;color:#fff;margin-top:2px}
+.prev{padding:clamp(28px,4vw,52px) 0}
+.prev h2{font-size:28px;font-weight:800;margin:0 0 14px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
 summary{cursor:pointer;padding:14px 16px;font-weight:600;min-height:44px}
-summary:focus-visible{outline:3px solid var(--ball)}
 .list{list-style:none;margin:0;padding:0 16px 12px}
-.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.14);font-size:15px}
-.list .w{font-weight:700}.list .l{color:var(--soft)}
-.note{font-size:13px;color:var(--soft);margin-top:16px}
-.note a{color:var(--ball)}
-.tabs{display:flex;gap:8px;margin-top:16px}
-.tabs button{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--line);background:transparent;color:#fff;font:600 16px Barlow;cursor:pointer}
-.tabs button[aria-selected=true]{background:#fff;color:#0b1f3f}
-.tabs button:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:15px}
+.list .w{font-weight:700}.list .l{color:var(--mute)}
+.note{font-size:13px;color:var(--mute);margin:18px 0 0}
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:26px}
+footer .logos{display:flex;align-items:center;gap:18px}
+footer .logos img{height:auto;opacity:.85}
+footer p{margin:0;font-size:13px;color:var(--mute);max-width:560px}
+footer a{color:#fff}
 </style>
 </head>
 <body>
-<header class="band">
-  <h1>México Major · Acapulco</h1>
-  <p class="sub">Arena GNP Seguros · 23–29 de noviembre de 2026 · horarios en hora de México</p>
-  <div class="tabs" role="tablist"><button role="tab" id="tm" aria-selected="true">Masculino</button><button role="tab" id="tw" aria-selected="false">Femenino</button></div>
-  <div class="status"><span class="pill"><span class="dot"></span><span id="st"></span></span><span class="upd" id="upd"></span></div>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a href="https://vaxtapadel.com" aria-label="Vaxta Padel"><img class="vx" src="assets/vaxta.png" alt="Vaxta Padel" width="104" height="60" onerror="this.style.display='none'"></a>
+      <span class="sep" aria-hidden="true"></span>
+      <img class="sx" src="assets/siux.png" alt="Siux Padel" width="118" height="38" onerror="this.style.display='none'">
+      <span class="pres">presentan</span>
+    </div>
+    <h1>México Major <span>2026</span></h1>
+    <p class="sub">Arena GNP Seguros, Acapulco · 23–29 de noviembre · horarios en hora de México</p>
+    <div class="bar">
+      <div class="tabs" role="tablist"><button role="tab" id="tm" aria-selected="true">Masculino</button><button role="tab" id="tw" aria-selected="false">Femenino</button></div>
+      <div class="status"><span class="pill"><span class="dot"></span><span id="st"></span></span><span class="upd" id="upd"></span></div>
+    </div>
+  </div>
 </header>
-<section class="courtwrap" aria-label="Cuadro desde octavos">
+<section class="court" aria-label="Cuadro desde octavos">
   <div class="nav"><button id="prv" aria-label="Ronda anterior">‹</button><button id="nxt" aria-label="Ronda siguiente">›</button></div>
   <div class="bracket" id="br" tabindex="0"></div>
 </section>
-<section class="band prev">
+<section class="wrap prev">
   <h2>Rondas anteriores</h2>
   <div id="prev"></div>
-  <p class="note">Se actualiza cada 10 minutos con los datos de premierpadel.com. "Turno" indica el orden en la pista: los partidos después del primero no tienen hora fija.</p>
+  <p class="note">Se actualiza cada 10 minutos. "Turno" indica el orden en la pista: los partidos después del primero no tienen hora fija.</p>
 </section>
+<footer>
+  <div class="wrap">
+    <div class="logos"><img src="assets/vaxta.png" alt="Vaxta Padel" width="70" height="41" onerror="this.style.display='none'"><img src="assets/siux.png" alt="Siux Padel" width="84" height="27" onerror="this.style.display='none'"></div>
+    <p>Cuadro no oficial elaborado por Vaxta Padel y Siux. Resultados tomados de <a href="https://premierpadel.com/es/tournaments-detail/mexico-major">premierpadel.com</a>.</p>
+  </div>
+</footer>
 <script>
 {
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
