@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T00:32:36-06:00",
+ "updated": "2026-11-27T16:01:28-06:00",
  "draws": {
   "m": {
    "status": "Cuartos · Viernes 27 nov",
@@ -91,7 +91,7 @@
        "sa": 1,
        "b": "Valenzuela / Gil",
        "court": "Estadio",
-       "time": "16:00"
+       "time": "Comienza pronto"
       },
       {
        "b": "Navarro / Di Nenno",
@@ -99,7 +99,7 @@
        "a": "Bautista / Bergamini",
        "sa": 11,
        "court": "Caliente",
-       "time": "16:00"
+       "time": "Comienza pronto"
       },
       {
        "court": "Caliente",
@@ -107,7 +107,7 @@
        "sa": 9,
        "b": "Leal / Guerrero",
        "sb": 6,
-       "time": "2º turno"
+       "time": "Comienza pronto"
       },
       {
        "court": "Estadio",
@@ -115,7 +115,7 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "time": "2º turno"
+       "time": "Comienza pronto"
       }
      ]
     },
@@ -313,7 +313,7 @@
    ]
   },
   "w": {
-   "status": "Cuartos · Viernes 27 nov",
+   "status": "Cuartos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -404,7 +404,7 @@
        "sb": 9,
        "a": "Brea / Triay",
        "sa": 1,
-       "time": "16:00"
+       "time": "Comienza pronto"
       },
       {
        "court": "Caliente",
@@ -412,7 +412,7 @@
        "sa": 5,
        "b": "Calvo / Fernández",
        "sb": 4,
-       "time": "16:00"
+       "time": "Comienza pronto"
       },
       {
        "court": "Caliente",
@@ -420,7 +420,8 @@
        "sa": 3,
        "b": "Guinart / Alonso",
        "sb": 7,
-       "time": "2º turno"
+       "time": "En cancha",
+       "live": true
       },
       {
        "court": "Estadio",
@@ -428,7 +429,7 @@
        "sa": 6,
        "b": "Josemaría / González",
        "sb": 2,
-       "time": "2º turno"
+       "time": "Comienza pronto"
       }
      ]
     },
