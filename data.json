@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T17:16:33-06:00",
+ "updated": "2026-11-27T17:22:20-06:00",
  "draws": {
   "m": {
-   "status": "Cuartos · Viernes 27 nov",
+   "status": "Cuartos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -115,7 +115,8 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "time": "Comienza pronto"
+       "time": "En cancha",
+       "live": true
       }
      ]
     },
