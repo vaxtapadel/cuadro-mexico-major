@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T16:30:22-06:00",
+ "updated": "2026-11-27T16:36:08-06:00",
  "draws": {
   "m": {
    "status": "Cuartos · Viernes 27 nov",
@@ -421,7 +421,7 @@
        "b": "Guinart / Alonso",
        "sb": 7,
        "live": true,
-       "score": "2-3"
+       "score": "3-3"
       },
       {
        "court": "Estadio",
@@ -429,7 +429,7 @@
        "sa": 6,
        "b": "Josemaría / González",
        "sb": 2,
-       "score": "1-3",
+       "score": "1-5",
        "live": true
       }
      ]
