@@ -105,7 +105,7 @@ footer a{color:#fff}
 <section class="wrap prev">
   <h2>Rondas anteriores</h2>
   <div id="prev"></div>
-  <p class="note">Se actualiza cada 10 minutos. "Turno" indica el orden en la pista: los partidos después del primero no tienen hora fija.</p>
+  <p class="note">Se actualiza cada 5 a 10 minutos. "Turno" indica el orden en la pista: los partidos después del primero no tienen hora fija.</p>
 </section>
 <footer>
   <div class="wrap">
@@ -158,8 +158,9 @@ function render(){
   const d=new Date(data.updated);
   document.getElementById('upd').textContent=isNaN(d)?'':'Actualizado: '+d.toLocaleString('es-MX',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'America/Mexico_City'});
 }
+const RAW='https://raw.githubusercontent.com/vaxtapadel/cuadro-mexico-major/main/data.json';
 async function load(){
-  try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;data=await r.json();render()}
+  try{let r;try{r=await fetch(RAW+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0}catch(e){r=await fetch('data.json?t='+Date.now(),{cache:'no-store'})}if(!r.ok)throw 0;data=await r.json();render()}
   catch(e){if(!data)br.innerHTML='<p style="padding:20px">No se pudieron cargar los datos. Recarga la página.</p>'}
 }
 const pick=k=>{cur=k;try{history.replaceState(null,'',k==='w'?'#femenino':'#masculino')}catch(e){}render();br.scrollTo({left:0})};

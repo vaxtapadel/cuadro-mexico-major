@@ -188,7 +188,7 @@ function apply(draw, matches, now) {
 
 async function main() {
   const now = new Date();
-  if (now > LAST_DAY) { console.log('Torneo terminado: no hay nada que actualizar.'); return; }
+  if (now > LAST_DAY) { console.log('Torneo terminado: no hay nada que actualizar.'); fs.writeFileSync('.stop', 'fin'); return; }
   const argi = process.argv.indexOf('--text');
   const texts = argi > 0 ? JSON.parse(fs.readFileSync(process.argv[argi + 1], 'utf8')) : await fetchTexts();
   const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));

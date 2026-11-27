@@ -1,16 +1,18 @@
-name: Actualizar cuadro
+name: Actualizar resultados
 
+# Una sola ejecución larga: lee premierpadel.com cada 5 minutos durante ~5.5 horas
+# y al terminar se vuelve a lanzar sola. El horario (cron) es solo un respaldo.
 on:
-  schedule:
-    - cron: "*/10 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
+    paths: [".github/workflows/update.yml", "scripts/**"]
+  schedule:
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 concurrency:
   group: actualizar
@@ -19,9 +21,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    environment:
-      name: github-pages
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -34,46 +34,24 @@ jobs:
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
 
-      - name: Descargar logos (solo si faltan)
+      - name: Leer y guardar cada 5 minutos
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p assets
-          [ -s assets/vaxta.png ] || curl -fsSL -o assets/vaxta.png "https://images.squarespace-cdn.com/content/v1/66e74a53d0952a341ba79ccf/68c21e4e-b1fe-4c9f-95bb-ae604a49e245/Vaxta+Padel+Logo+Blanco.png?format=500w" || true
-          [ -s assets/siux.png ] || curl -fsSL -o assets/siux.png "https://nuevo-vaxtapadel.netlify.app/img/siux-blanco.png" || true
-          ls -la assets
-
-      - name: Leer premierpadel.com
-        id: scrape
-        continue-on-error: true
-        run: node scripts/scrape.mjs
-
-      - name: Guardar cambios
-        id: commit
-        run: |
-          git add -A assets data.json
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git config user.name "cuadro-bot"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Actualizar resultados"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+          git config user.name "cuadro-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          END=$(( $(date +%s) + 330*60 ))
+          while [ "$(date +%s)" -lt "$END" ]; do
+            node scripts/scrape.mjs || echo "Falló la lectura, se reintenta en 5 minutos"
+            git add data.json
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Actualizar resultados"
+              git pull -q --rebase || true
+              git push -q || echo "No se pudo subir, se reintenta"
+            fi
+            if [ -f .stop ]; then echo "Torneo terminado"; break; fi
+            sleep 300
+          done
+          if [ ! -f .stop ]; then
+            gh workflow run update.yml --ref main
           fi
-
-      - name: Preparar sitio
-        if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
-        run: |
-          mkdir -p _site
-          cp index.html data.json _site/
-          cp -r assets _site/ 2>/dev/null || true
-
-      - uses: actions/configure-pages@v5
-        if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
-
-      - uses: actions/upload-pages-artifact@v3
-        if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
-        with:
-          path: _site
-
-      - uses: actions/deploy-pages@v4
-        if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
