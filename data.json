@@ -1,0 +1,558 @@
+{
+ "updated": "2026-11-26T22:12:00-06:00",
+ "draws": {
+  "m": {
+   "status": "Octavos en juego · Tapia/Coello por salir",
+   "rounds": [
+    {
+     "key": "r16",
+     "name": "Octavos",
+     "day": "Jueves 26 nov · desde las 16:00",
+     "matches": [
+      {
+       "a": "Tapia / Coello",
+       "sa": 1,
+       "b": "Ruiz / García",
+       "court": "Estadio",
+       "time": "Comienza pronto",
+       "sb": 13
+      },
+      {
+       "a": "Sintes / Zamora",
+       "b": "Valenzuela / Gil",
+       "court": "5ta Avenida",
+       "time": "En cancha",
+       "live": true
+      },
+      {
+       "a": "González / Campagnolo",
+       "sa": 8,
+       "b": "Bautista / Bergamini",
+       "court": "Mifel",
+       "time": "4º turno",
+       "sb": 11,
+       "live": true
+      },
+      {
+       "a": "Jiménez / Chozas",
+       "b": "Navarro / Di Nenno",
+       "sb": 4,
+       "court": "Caliente",
+       "time": "4º turno",
+       "sa": 15,
+       "live": true,
+       "score": "3-6 0-0"
+      },
+      {
+       "a": "Stupaczuk / Sanz",
+       "sa": 3,
+       "b": "Libaak / Alfonso",
+       "court": "Caliente",
+       "time": "2º turno",
+       "sb": 9,
+       "score": "6-7 6-4 4-6",
+       "w": "b"
+      },
+      {
+       "a": "Alonso / Goñi",
+       "b": "Leal / Guerrero",
+       "sb": 6,
+       "court": "5ta Avenida",
+       "time": "2º turno",
+       "sa": 10,
+       "score": "6-7 7-6 2-6",
+       "w": "b"
+      },
+      {
+       "a": "Nieto / Yanguas",
+       "sa": 5,
+       "b": "Jofre / Esbrí",
+       "court": "Mifel",
+       "time": "2º turno",
+       "sb": 12,
+       "score": "6-3 3-6 2-6",
+       "w": "b"
+      },
+      {
+       "a": "Sánchez / Gutiérrez",
+       "b": "Lebrón / Augsburger",
+       "sb": 2,
+       "court": "Estadio",
+       "time": "2º turno",
+       "sa": 16,
+       "score": "6-7 4-6",
+       "w": "b"
+      }
+     ]
+    },
+    {
+     "key": "qf",
+     "name": "Cuartos",
+     "day": "Viernes 27 nov · desde las 16:00",
+     "matches": [
+      {},
+      {},
+      {
+       "court": "Caliente"
+      },
+      {
+       "court": "Estadio"
+      }
+     ]
+    },
+    {
+     "key": "sf",
+     "name": "Semifinales",
+     "day": "Sábado 28 nov · desde las 16:00",
+     "matches": [
+      {},
+      {}
+     ]
+    },
+    {
+     "key": "f",
+     "name": "Final",
+     "day": "Domingo 29 nov",
+     "matches": [
+      {}
+     ]
+    }
+   ],
+   "previous": [
+    {
+     "name": "Segunda ronda",
+     "day": "Miércoles 25 nov",
+     "matches": [
+      [
+       "(1) Tapia / Coello",
+       "Quílez / Mouriño",
+       "6-3 6-2"
+      ],
+      [
+       "Ruiz / García",
+       "Patiniotis / Roper",
+       "7-5 6-2"
+      ],
+      [
+       "Sintes / Zamora",
+       "Garrido / De Pascual",
+       "6-2 6-7 6-3"
+      ],
+      [
+       "Valenzuela / Gil",
+       "(7) Tello / Arce",
+       "7-6 7-5"
+      ],
+      [
+       "(8) González / Campagnolo",
+       "Capra / Sánchez",
+       "6-3 6-3"
+      ],
+      [
+       "Bautista / Bergamini",
+       "Geens / Guichard",
+       "6-2 7-5"
+      ],
+      [
+       "Jiménez / Chozas",
+       "Rodríguez / García",
+       "7-6 7-5"
+      ],
+      [
+       "(4) Navarro / Di Nenno",
+       "Montiel / Santigosa",
+       "6-4 6-3"
+      ],
+      [
+       "(3) Stupaczuk / Sanz",
+       "Aguirre / Lijó",
+       "7-5 6-2"
+      ],
+      [
+       "Libaak / Alfonso",
+       "Goenaga / Collado",
+       "6-3 7-5"
+      ],
+      [
+       "Alonso / Goñi",
+       "Cabeza / González",
+       "7-6 6-2"
+      ],
+      [
+       "(6) Leal / Guerrero",
+       "Castaño / Álvarez",
+       "6-4 6-2"
+      ],
+      [
+       "(5) Nieto / Yanguas",
+       "González / García",
+       "6-1 6-1"
+      ],
+      [
+       "Jofre / Esbrí",
+       "Diestro / Fernández",
+       "6-1 7-5"
+      ],
+      [
+       "Sánchez / Gutiérrez",
+       "Zapata / Naranjo",
+       "6-3 3-6 6-1"
+      ],
+      [
+       "(2) Lebrón / Augsburger",
+       "Gala / Rubini",
+       "3-6 7-6 6-0"
+      ]
+     ]
+    },
+    {
+     "name": "Primera ronda",
+     "day": "Lunes 23 y martes 24 nov",
+     "matches": [
+      [
+       "Quílez / Mouriño",
+       "Ruiz / López",
+       "3-6 6-4 6-4"
+      ],
+      [
+       "Patiniotis / Roper",
+       "Martínez / Hernández",
+       "6-2 6-7 6-3"
+      ],
+      [
+       "Sintes / Zamora",
+       "Aragón / Roglán",
+       "7-6 6-4"
+      ],
+      [
+       "Valenzuela / Gil",
+       "Barahona / Piotto",
+       "5-7 6-2 7-6"
+      ],
+      [
+       "Capra / Sánchez",
+       "Solano / Pereyra",
+       "6-3 5-7 6-4"
+      ],
+      [
+       "Geens / Guichard",
+       "Rivero / Castro",
+       "6-3 6-0"
+      ],
+      [
+       "Rodríguez / García",
+       "Vilariño / Del Castillo",
+       "6-2 6-4"
+      ],
+      [
+       "Montiel / Santigosa",
+       "Fernández / Cepero",
+       "6-1 6-2"
+      ],
+      [
+       "Aguirre / Lijó",
+       "Arredondo / Torre",
+       "6-3 6-3"
+      ],
+      [
+       "Goenaga / Collado",
+       "Lamperti / Álvarez",
+       "7-6 6-4"
+      ],
+      [
+       "Cabeza / González",
+       "Valdés / Núñez",
+       "6-7 7-6 6-4"
+      ],
+      [
+       "Castaño / Álvarez",
+       "Dal Bianco / Abbate",
+       "6-3 6-4"
+      ],
+      [
+       "González / García",
+       "Padilla / Amora",
+       "6-4 6-4"
+      ],
+      [
+       "Diestro / Fernández",
+       "Perino / Domínguez",
+       "6-3 6-1"
+      ],
+      [
+       "Zapata / Naranjo",
+       "Arroyo / Jensen",
+       "7-6 6-7 7-6"
+      ],
+      [
+       "Gala / Rubini",
+       "Ruiz / González",
+       "6-4 6-2"
+      ]
+     ]
+    }
+   ]
+  },
+  "w": {
+   "status": "Octavos: falta Brea/Triay (en juego)",
+   "rounds": [
+    {
+     "key": "r16",
+     "name": "Octavos",
+     "day": "Jueves 26 nov · desde las 16:00",
+     "matches": [
+      {
+       "a": "Brea / Triay",
+       "b": "Velasco / Eugenio",
+       "court": "Estadio",
+       "time": "3er turno · no antes de 19:00",
+       "sa": 1,
+       "sb": 13,
+       "score": "3-6 6-3 2-1",
+       "live": true
+      },
+      {
+       "a": "Caldera / Goenaga",
+       "b": "Salazar / Osoro",
+       "court": "5ta Avenida",
+       "time": "3er turno",
+       "sa": 9,
+       "sb": 8,
+       "score": "6-3 6-4",
+       "w": "a"
+      },
+      {
+       "a": "Ortega / Araújo",
+       "b": "Montes / Barrera",
+       "court": "Mifel",
+       "time": "3er turno",
+       "sa": 5,
+       "sb": 15,
+       "score": "6-4 6-4",
+       "w": "a"
+      },
+      {
+       "a": "Rufo / Iglesias",
+       "b": "Calvo / Fernández",
+       "court": "Caliente",
+       "time": "3er turno",
+       "sa": 12,
+       "sb": 4,
+       "score": "3-6 2-6",
+       "w": "b"
+      },
+      {
+       "a": "Sánchez / Ustero",
+       "b": "Virseda / Fassio",
+       "court": "Caliente",
+       "time": "16:00",
+       "sa": 3,
+       "sb": 10,
+       "score": "6-1 6-3",
+       "w": "a"
+      },
+      {
+       "a": "Castelló / Rodríguez",
+       "b": "Guinart / Alonso",
+       "court": "5ta Avenida",
+       "time": "16:00",
+       "sa": 16,
+       "sb": 7,
+       "score": "1-6 3-6",
+       "w": "b"
+      },
+      {
+       "a": "Icardo / Jensen",
+       "b": "Lobo / Cánovas",
+       "court": "Mifel",
+       "time": "16:00",
+       "sa": 6,
+       "score": "6-4 6-2",
+       "w": "a"
+      },
+      {
+       "a": "Rodríguez / Dal Pozzo",
+       "b": "Josemaría / González",
+       "court": "Estadio",
+       "time": "16:00",
+       "sa": 11,
+       "sb": 2,
+       "score": "0-6 5-7",
+       "w": "b"
+      }
+     ]
+    },
+    {
+     "key": "qf",
+     "name": "Cuartos",
+     "day": "Viernes 27 nov · desde las 16:00",
+     "matches": [
+      {
+       "court": "Estadio"
+      },
+      {
+       "court": "Caliente"
+      },
+      {
+       "court": "Caliente"
+      },
+      {
+       "court": "Estadio"
+      }
+     ]
+    },
+    {
+     "key": "sf",
+     "name": "Semifinales",
+     "day": "Sábado 28 nov · desde las 16:00",
+     "matches": [
+      {},
+      {}
+     ]
+    },
+    {
+     "key": "f",
+     "name": "Final",
+     "day": "Domingo 29 nov",
+     "matches": [
+      {}
+     ]
+    }
+   ],
+   "previous": [
+    {
+     "name": "Segunda ronda",
+     "day": "Miércoles 25 nov",
+     "matches": [
+      [
+       "Velasco / Eugenio",
+       "López / Fassio",
+       "6-4 6-3"
+      ],
+      [
+       "Caldera / Goenaga",
+       "Cañellas / Peralta",
+       "6-2 6-3"
+      ],
+      [
+       "Salazar / Osoro",
+       "Talavan / Saiz",
+       "6-2 6-2"
+      ],
+      [
+       "Ortega / Araújo",
+       "Carrascosa / Fernández",
+       "6-2 7-5"
+      ],
+      [
+       "Montes / Barrera",
+       "Godallier / Valenzuela",
+       "6-2 6-4"
+      ],
+      [
+       "Rufo / Iglesias",
+       "Manquillo / Sainz",
+       "6-4 6-3"
+      ],
+      [
+       "Virseda / Fassio",
+       "Martínez / Martínez",
+       "6-2 6-2"
+      ],
+      [
+       "Castelló / Rodríguez",
+       "Borrero / Marchetti",
+       "6-0 4-6 6-4"
+      ],
+      [
+       "Guinart / Alonso",
+       "López / Martínez",
+       "6-2 6-2"
+      ],
+      [
+       "Icardo / Jensen",
+       "Bidahorria / Riera",
+       "6-3 6-3"
+      ],
+      [
+       "Lobo / Cánovas",
+       "Orsi / Llaguno",
+       "7-6 ret."
+      ],
+      [
+       "Rodríguez / Dal Pozzo",
+       "Castillón / Vano",
+       "6-4 6-1"
+      ]
+     ]
+    },
+    {
+     "name": "Primera ronda",
+     "day": "Lunes 23 y martes 24 nov",
+     "matches": [
+      [
+       "López / Fassio",
+       "Arellano / Kurz",
+       "6-3 4-6 6-3"
+      ],
+      [
+       "Cañellas / Peralta",
+       "Rose / Luttikhuis",
+       "6-7 6-3 6-4"
+      ],
+      [
+       "Talavan / Saiz",
+       "Val / Bahurel",
+       "6-3 6-4"
+      ],
+      [
+       "Carrascosa / Fernández",
+       "Ramme / Rodríguez",
+       "3-6 6-1 6-0"
+      ],
+      [
+       "Godallier / Valenzuela",
+       "Polo / Martínez",
+       "6-2 7-5"
+      ],
+      [
+       "Manquillo / Sainz",
+       "Aguilar / Escacena",
+       "7-6 7-6"
+      ],
+      [
+       "Martínez / Martínez",
+       "Fernández / Guerra",
+       "6-3 6-0"
+      ],
+      [
+       "Borrero / Marchetti",
+       "Navarro / Ferran",
+       "3-6 6-4 7-5"
+      ],
+      [
+       "López / Martínez",
+       "Ortiz / Domínguez",
+       "6-4 7-6"
+      ],
+      [
+       "Bidahorria / Riera",
+       "López / Dias",
+       "6-4 6-0"
+      ],
+      [
+       "Lobo / Cánovas",
+       "Sharifova / Collombon",
+       "6-3 7-6"
+      ],
+      [
+       "Castillón / Vano",
+       "Fuentes / Reyes",
+       "6-0 6-1"
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuadro México Major</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: marcador de estadio, directo y deportivo.
+   IDEA: la pizarra del cuadro oficial pintada sobre la pista azul de pádel.
+   PICTURE: el propio cuadro (octavos → final) ocupa la primera pantalla.
+   COLOUR and TYPE: azul pista, líneas blancas, amarillo pelota; Barlow Condensed + Barlow.
+   LAYOUT: título breve arriba, cuadro en columnas con desplazamiento lateral, rondas previas debajo. */
+:root{color-scheme:light dark;--bg:light-dark(#1d4f9c,#0b1f3f);--court:light-dark(#2563b8,#13305e);--line:rgba(255,255,255,.9);--ink:#fff;--soft:rgba(255,255,255,.72);--card:light-dark(#fff,#16294a);--cink:light-dark(#0b1f3f,#eef3ff);--cmute:light-dark(#5a6b86,#9fb0cf);--ball:#e3f53b;--live:#ff5a4e}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif;overflow-x:clip}
+.band{padding:clamp(22px,4vw,48px) max(5vw,16px)}
+h1,h2,.rnd h3{font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;margin:0}
+h1{font-size:clamp(32px,6vw,50px);line-height:1.05;text-wrap:balance}
+.sub{color:var(--soft);margin:6px 0 0}
+.status{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:14px;font-size:15px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--ball);color:#0b1f3f;font-weight:600;border-radius:999px;padding:4px 12px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--live)}
+@media(prefers-reduced-motion:no-preference){.dot{animation:p 1.4s infinite}@keyframes p{50%{opacity:.25}}}
+.upd{color:var(--soft)}
+.courtwrap{background:var(--court);border-top:3px solid var(--line);border-bottom:3px solid var(--line);position:relative}
+.courtwrap::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent calc(50% - 1px),rgba(255,255,255,.18) calc(50% - 1px),rgba(255,255,255,.18) calc(50% + 1px),transparent calc(50% + 1px));pointer-events:none}
+.nav{display:flex;gap:8px;justify-content:flex-end;padding:12px max(5vw,16px) 0;position:relative}
+.nav button{min-width:44px;min-height:44px;border-radius:10px;border:2px solid var(--line);background:transparent;color:#fff;font:600 20px Barlow;cursor:pointer}
+.nav button:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+.bracket{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(5vw,16px);gap:18px;padding:12px max(5vw,16px) 26px;position:relative;scrollbar-width:thin}
+.rnd{flex:0 0 min(290px,82vw);scroll-snap-align:start;display:flex;flex-direction:column}
+.rnd h3{font-size:22px;letter-spacing:.01em}
+.rnd .day{font-size:14px;color:var(--soft);margin-bottom:10px}
+.col{flex:1;display:flex;flex-direction:column;justify-content:space-around;gap:10px}
+.m{background:var(--card);color:var(--cink);border-radius:12px;box-shadow:0 3px 0 rgba(0,0,0,.18);overflow:hidden}
+.m.live{box-shadow:0 0 0 3px var(--live)}
+.t{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:8px 12px;font-size:15px}
+.t+.t{border-top:1px solid light-dark(#e3e8f1,#24375a)}
+.t .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.t.win .n{font-weight:700}
+.t.lose{color:var(--cmute)}
+.t.tbd .n{color:var(--cmute);font-style:italic}
+.seed{font-size:12px;color:var(--cmute);margin-right:4px}
+.sc{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;letter-spacing:.04em}
+.ball{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--ball);box-shadow:inset -2px -2px 0 rgba(0,0,0,.15);margin-right:6px;vertical-align:1px}
+.tag{font-size:12px;padding:2px 12px 6px;color:var(--cmute)}
+.m.live .tag{color:var(--live);font-weight:600}
+.champ{margin-top:14px;text-align:center;border:3px solid var(--ball);border-radius:14px;padding:14px 10px}
+.champ b{display:block;font:700 26px "Barlow Condensed",sans-serif;color:var(--ball)}
+.prev h2{font-size:30px;margin-bottom:12px}
+details{background:rgba(255,255,255,.08);border-radius:12px;margin-bottom:12px}
+summary{cursor:pointer;padding:14px 16px;font-weight:600;min-height:44px}
+summary:focus-visible{outline:3px solid var(--ball)}
+.list{list-style:none;margin:0;padding:0 16px 12px}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.14);font-size:15px}
+.list .w{font-weight:700}.list .l{color:var(--soft)}
+.note{font-size:13px;color:var(--soft);margin-top:16px}
+.note a{color:var(--ball)}
+.tabs{display:flex;gap:8px;margin-top:16px}
+.tabs button{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--line);background:transparent;color:#fff;font:600 16px Barlow;cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:#0b1f3f}
+.tabs button:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="band">
+  <h1>México Major · Acapulco</h1>
+  <p class="sub">Arena GNP Seguros · 23–29 de noviembre de 2026 · horarios en hora de México</p>
+  <div class="tabs" role="tablist"><button role="tab" id="tm" aria-selected="true">Masculino</button><button role="tab" id="tw" aria-selected="false">Femenino</button></div>
+  <div class="status"><span class="pill"><span class="dot"></span><span id="st"></span></span><span class="upd" id="upd"></span></div>
+</header>
+<section class="courtwrap" aria-label="Cuadro desde octavos">
+  <div class="nav"><button id="prv" aria-label="Ronda anterior">‹</button><button id="nxt" aria-label="Ronda siguiente">›</button></div>
+  <div class="bracket" id="br" tabindex="0"></div>
+</section>
+<section class="band prev">
+  <h2>Rondas anteriores</h2>
+  <div id="prev"></div>
+  <p class="note">Se actualiza cada 10 minutos con los datos de premierpadel.com. "Turno" indica el orden en la pista: los partidos después del primero no tienen hora fija.</p>
+</section>
+<script>
+{
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const br=document.getElementById('br'),pv=document.getElementById('prev');
+let data=null,cur=location.hash==='#femenino'?'w':'m';
+function winner(m){if(!m||!m.w)return null;return m.w==='a'?{n:m.a,s:m.sa}:{n:m.b,s:m.sb}}
+function filled(rounds){
+  const r=JSON.parse(JSON.stringify(rounds||[]));
+  for(let i=1;i<r.length;i++){
+    const prev=r[i-1].matches||[];
+    (r[i].matches||[]).forEach((m,j)=>{
+      const A=winner(prev[2*j]),B=winner(prev[2*j+1]);
+      if(!m.a&&A){m.a=A.n;m.sa=A.s}
+      if(!m.b&&B){m.b=B.n;m.sb=B.s}
+      m._pa=r[i-1].name;m._ia=2*j+1;m._ib=2*j+2;
+    });
+  }
+  return r;
+}
+function team(m,side){
+  const n=m[side],s=m['s'+side],w=m.w;
+  const sets=String(m.score||'').trim().split(/\s+/).filter(Boolean);
+  const mine=sets.map(x=>{const p=x.split('-');return side==='a'?p[0]:(p[1]||'')}).join('  ');
+  if(!n)return `<div class="t tbd"><span class="n">Ganador ${esc(m._pa||'')} ${side==='a'?m._ia:m._ib}</span><span></span></div>`;
+  const cls=w?(w===side?'win':'lose'):'';
+  return `<div class="t ${cls}"><span class="n">${w===side?'<span class="ball"></span>':''}${s?`<span class="seed">(${esc(s)})</span>`:''}${esc(n)}</span><span class="sc">${esc(mine)}</span></div>`;
+}
+function match(m){
+  const where=[m.court,m.time].filter(Boolean).map(esc).join(' · ');
+  let tag=m.live?'En juego'+(m.court?' · '+esc(m.court):''):(m.w?'Terminado':where);
+  return `<div class="m${m.live?' live':''}">${team(m,'a')}${team(m,'b')}${tag?`<div class="tag">${tag}</div>`:''}</div>`;
+}
+function render(){
+  document.getElementById('tm').setAttribute('aria-selected',cur==='m');
+  document.getElementById('tw').setAttribute('aria-selected',cur==='w');
+  if(!data){br.innerHTML='<p style="padding:20px">Cargando cuadro…</p>';return}
+  const D=(data.draws||{})[cur]||{};
+  const r=filled(D.rounds);
+  const ch=winner(r[r.length-1]?.matches?.[0]);
+  br.innerHTML=r.map(x=>`<div class="rnd"><h3>${esc(x.name)}</h3><div class="day">${esc(x.day)}</div><div class="col">${(x.matches||[]).map(match).join('')}${x.key==='f'?`<div class="champ">${cur==='w'?'Campeonas':'Campeones'}<b>${ch?esc(ch.n):'Por definir'}</b></div>`:''}</div></div>`).join('');
+  pv.innerHTML=(D.previous||[]).map((p,i)=>`<details${i===0?' open':''}><summary>${esc(p.name)} · ${esc(p.day)}</summary><ul class="list">${(p.matches||[]).map(x=>`<li><span><span class="w">${esc(x[0])}</span> <span class="l">vence a ${esc(x[1])}</span></span><span class="sc">${esc(x[2])}</span></li>`).join('')}</ul></details>`).join('');
+  document.getElementById('st').textContent=D.status||'';
+  const d=new Date(data.updated);
+  document.getElementById('upd').textContent=isNaN(d)?'':'Actualizado: '+d.toLocaleString('es-MX',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'America/Mexico_City'});
+}
+async function load(){
+  try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;data=await r.json();render()}
+  catch(e){if(!data)br.innerHTML='<p style="padding:20px">No se pudieron cargar los datos. Recarga la página.</p>'}
+}
+const pick=k=>{cur=k;try{history.replaceState(null,'',k==='w'?'#femenino':'#masculino')}catch(e){}render();br.scrollTo({left:0})};
+document.getElementById('tm').addEventListener('click',()=>pick('m'));
+document.getElementById('tw').addEventListener('click',()=>pick('w'));
+window.addEventListener('hashchange',()=>{cur=location.hash==='#femenino'?'w':'m';render()});
+const step=dir=>{const c=br.querySelector('.rnd');if(c)br.scrollBy({left:dir*(c.offsetWidth+18),behavior:'smooth'})};
+document.getElementById('prv').addEventListener('click',()=>step(-1));
+document.getElementById('nxt').addEventListener('click',()=>step(1));
+br.addEventListener('keydown',e=>{if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+load();setInterval(load,120000);
+}
+</script>
+</body>
+</html>

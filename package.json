@@ -1,0 +1,7 @@
+{
+  "name": "cuadro-mexico-major",
+  "private": true,
+  "type": "module",
+  "scripts": { "update": "node scripts/scrape.mjs" },
+  "dependencies": { "playwright": "1.49.1" }
+}
