@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-26T22:12:00-06:00",
+ "updated": "2026-11-26T22:25:23-06:00",
  "draws": {
   "m": {
-   "status": "Octavos en juego · Tapia/Coello por salir",
+   "status": "Octavos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -21,34 +21,32 @@
        "a": "Sintes / Zamora",
        "b": "Valenzuela / Gil",
        "court": "5ta Avenida",
-       "time": "En cancha",
-       "live": true
+       "live": true,
+       "score": "1-0"
       },
       {
        "a": "González / Campagnolo",
        "sa": 8,
        "b": "Bautista / Bergamini",
        "court": "Mifel",
-       "time": "4º turno",
        "sb": 11,
-       "live": true
+       "live": true,
+       "score": "1-2"
       },
       {
        "a": "Jiménez / Chozas",
        "b": "Navarro / Di Nenno",
        "sb": 4,
        "court": "Caliente",
-       "time": "4º turno",
        "sa": 15,
        "live": true,
-       "score": "3-6 0-0"
+       "score": "3-6 1-3"
       },
       {
        "a": "Stupaczuk / Sanz",
        "sa": 3,
        "b": "Libaak / Alfonso",
        "court": "Caliente",
-       "time": "2º turno",
        "sb": 9,
        "score": "6-7 6-4 4-6",
        "w": "b"
@@ -58,7 +56,6 @@
        "b": "Leal / Guerrero",
        "sb": 6,
        "court": "5ta Avenida",
-       "time": "2º turno",
        "sa": 10,
        "score": "6-7 7-6 2-6",
        "w": "b"
@@ -68,7 +65,6 @@
        "sa": 5,
        "b": "Jofre / Esbrí",
        "court": "Mifel",
-       "time": "2º turno",
        "sb": 12,
        "score": "6-3 3-6 2-6",
        "w": "b"
@@ -78,7 +74,6 @@
        "b": "Lebrón / Augsburger",
        "sb": 2,
        "court": "Estadio",
-       "time": "2º turno",
        "sa": 16,
        "score": "6-7 4-6",
        "w": "b"
@@ -93,10 +88,20 @@
       {},
       {},
       {
-       "court": "Caliente"
+       "court": "Caliente",
+       "a": "Libaak / Alfonso",
+       "sa": 9,
+       "b": "Leal / Guerrero",
+       "sb": 6,
+       "time": "16:00"
       },
       {
-       "court": "Estadio"
+       "court": "Estadio",
+       "a": "Jofre / Esbrí",
+       "sa": 12,
+       "b": "Lebrón / Augsburger",
+       "sb": 2,
+       "time": "16:00"
       }
      ]
     },
@@ -294,7 +299,7 @@
    ]
   },
   "w": {
-   "status": "Octavos: falta Brea/Triay (en juego)",
+   "status": "Octavos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -305,17 +310,15 @@
        "a": "Brea / Triay",
        "b": "Velasco / Eugenio",
        "court": "Estadio",
-       "time": "3er turno · no antes de 19:00",
        "sa": 1,
        "sb": 13,
-       "score": "3-6 6-3 2-1",
+       "score": "3-6 6-3 3-2",
        "live": true
       },
       {
        "a": "Caldera / Goenaga",
        "b": "Salazar / Osoro",
        "court": "5ta Avenida",
-       "time": "3er turno",
        "sa": 9,
        "sb": 8,
        "score": "6-3 6-4",
@@ -325,7 +328,6 @@
        "a": "Ortega / Araújo",
        "b": "Montes / Barrera",
        "court": "Mifel",
-       "time": "3er turno",
        "sa": 5,
        "sb": 15,
        "score": "6-4 6-4",
@@ -335,7 +337,6 @@
        "a": "Rufo / Iglesias",
        "b": "Calvo / Fernández",
        "court": "Caliente",
-       "time": "3er turno",
        "sa": 12,
        "sb": 4,
        "score": "3-6 2-6",
@@ -345,7 +346,6 @@
        "a": "Sánchez / Ustero",
        "b": "Virseda / Fassio",
        "court": "Caliente",
-       "time": "16:00",
        "sa": 3,
        "sb": 10,
        "score": "6-1 6-3",
@@ -355,7 +355,6 @@
        "a": "Castelló / Rodríguez",
        "b": "Guinart / Alonso",
        "court": "5ta Avenida",
-       "time": "16:00",
        "sa": 16,
        "sb": 7,
        "score": "1-6 3-6",
@@ -365,7 +364,6 @@
        "a": "Icardo / Jensen",
        "b": "Lobo / Cánovas",
        "court": "Mifel",
-       "time": "16:00",
        "sa": 6,
        "score": "6-4 6-2",
        "w": "a"
@@ -374,7 +372,6 @@
        "a": "Rodríguez / Dal Pozzo",
        "b": "Josemaría / González",
        "court": "Estadio",
-       "time": "16:00",
        "sa": 11,
        "sb": 2,
        "score": "0-6 5-7",
@@ -388,16 +385,33 @@
      "day": "Viernes 27 nov · desde las 16:00",
      "matches": [
       {
-       "court": "Estadio"
+       "court": "Estadio",
+       "b": "Caldera / Goenaga",
+       "sb": 9
       },
       {
-       "court": "Caliente"
+       "court": "Caliente",
+       "a": "Ortega / Araújo",
+       "sa": 5,
+       "b": "Calvo / Fernández",
+       "sb": 4,
+       "time": "16:00"
       },
       {
-       "court": "Caliente"
+       "court": "Caliente",
+       "a": "Sánchez / Ustero",
+       "sa": 3,
+       "b": "Guinart / Alonso",
+       "sb": 7,
+       "time": "2º turno"
       },
       {
-       "court": "Estadio"
+       "court": "Estadio",
+       "a": "Icardo / Jensen",
+       "sa": 6,
+       "b": "Josemaría / González",
+       "sb": 2,
+       "time": "16:00"
       }
      ]
     },
