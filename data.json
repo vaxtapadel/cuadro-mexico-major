@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T17:28:07-06:00",
+ "updated": "2026-11-27T17:33:53-06:00",
  "draws": {
   "m": {
-   "status": "Cuartos · Viernes 27 nov",
+   "status": "Cuartos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -106,14 +106,18 @@
        "a": "Libaak / Alfonso",
        "sa": 9,
        "b": "Leal / Guerrero",
-       "sb": 6
+       "sb": 6,
+       "score": "1-0",
+       "live": true
       },
       {
        "court": "Estadio",
        "a": "Jofre / Esbrí",
        "sa": 12,
        "b": "Lebrón / Augsburger",
-       "sb": 2
+       "sb": 2,
+       "score": "1-1",
+       "live": true
       }
      ]
     },
