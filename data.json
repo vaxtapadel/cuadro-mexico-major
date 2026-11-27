@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T17:10:47-06:00",
+ "updated": "2026-11-27T17:16:33-06:00",
  "draws": {
   "m": {
    "status": "Cuartos · Viernes 27 nov",
@@ -313,7 +313,7 @@
    ]
   },
   "w": {
-   "status": "Cuartos en juego",
+   "status": "Cuartos · Viernes 27 nov",
    "rounds": [
     {
      "key": "r16",
@@ -420,8 +420,8 @@
        "sa": 3,
        "b": "Guinart / Alonso",
        "sb": 7,
-       "live": true,
-       "score": "6-3 5-1"
+       "score": "6-3 6-2",
+       "w": "a"
       },
       {
        "court": "Estadio",
@@ -442,7 +442,9 @@
       {},
       {
        "b": "Josemaría / González",
-       "sb": 2
+       "sb": 2,
+       "a": "Sánchez / Ustero",
+       "sa": 3
       }
      ]
     },
