@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T23:09:18-06:00",
+ "updated": "2026-11-27T23:15:04-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -91,7 +91,7 @@
        "sa": 1,
        "b": "Valenzuela / Gil",
        "court": "Estadio",
-       "time": "Comienza pronto"
+       "live": true
       },
       {
        "b": "Navarro / Di Nenno",
@@ -100,7 +100,7 @@
        "sa": 11,
        "court": "Caliente",
        "live": true,
-       "score": "5-7 6-4 2-1"
+       "score": "5-7 6-4 3-2"
       },
       {
        "court": "Caliente",
