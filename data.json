@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T19:52:29-06:00",
+ "updated": "2026-11-27T19:58:16-06:00",
  "draws": {
   "m": {
    "status": "Cuartos · Viernes 27 nov",
@@ -116,8 +116,8 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "score": "6-2 6-7 7-6 0-0",
-       "time": "2º turno"
+       "score": "6-2 6-7 7-6",
+       "w": "a"
       }
      ]
     },
@@ -129,7 +129,11 @@
       {},
       {
        "a": "Libaak / Alfonso",
-       "sa": 9
+       "sa": 9,
+       "b": "Jofre / Esbrí",
+       "sb": 12,
+       "court": "Estadio",
+       "time": "16:00"
       }
      ]
     },
@@ -417,7 +421,7 @@
        "sa": 5,
        "b": "Calvo / Fernández",
        "sb": 4,
-       "score": "2-2",
+       "score": "2-4",
        "live": true
       },
       {
@@ -450,7 +454,9 @@
        "b": "Josemaría / González",
        "sb": 2,
        "a": "Sánchez / Ustero",
-       "sa": 3
+       "sa": 3,
+       "court": "Estadio",
+       "time": "16:00"
       }
      ]
     },
