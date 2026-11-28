@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T18:48:57-06:00",
+ "updated": "2026-11-27T18:54:44-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -107,7 +107,7 @@
        "sa": 9,
        "b": "Leal / Guerrero",
        "sb": 6,
-       "score": "7-6 4-2",
+       "score": "7-6 4-3",
        "live": true
       },
       {
@@ -116,7 +116,7 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "score": "6-2 6-7 0-0",
+       "score": "6-2 6-7 2-0",
        "live": true
       }
      ]
