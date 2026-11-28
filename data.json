@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T20:09:47-06:00",
+ "updated": "2026-11-27T20:15:34-06:00",
  "draws": {
   "m": {
    "status": "Cuartos · Viernes 27 nov",
@@ -413,7 +413,8 @@
        "sb": 9,
        "a": "Brea / Triay",
        "sa": 1,
-       "time": "Comienza pronto"
+       "score": "0-0",
+       "live": true
       },
       {
        "court": "Caliente",
@@ -421,7 +422,7 @@
        "sa": 5,
        "b": "Calvo / Fernández",
        "sb": 4,
-       "score": "2-6 0-0",
+       "score": "2-6 0-1",
        "live": true
       },
       {
