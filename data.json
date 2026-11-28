@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T19:12:04-06:00",
+ "updated": "2026-11-27T19:17:50-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -107,8 +107,8 @@
        "sa": 9,
        "b": "Leal / Guerrero",
        "sb": 6,
-       "score": "7-6 6-5",
-       "live": true
+       "score": "7-6 7-5",
+       "w": "a"
       },
       {
        "court": "Estadio",
@@ -116,7 +116,7 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "score": "6-2 6-7 3-2",
+       "score": "6-2 6-7 3-3",
        "live": true
       }
      ]
@@ -127,7 +127,10 @@
      "day": "Sábado 28 nov · desde las 16:00",
      "matches": [
       {},
-      {}
+      {
+       "a": "Libaak / Alfonso",
+       "sa": 9
+      }
      ]
     },
     {
