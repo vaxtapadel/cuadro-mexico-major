@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T23:32:24-06:00",
+ "updated": "2026-11-27T23:38:11-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -92,7 +92,7 @@
        "b": "Valenzuela / Gil",
        "court": "Estadio",
        "live": true,
-       "score": "3-2"
+       "score": "5-2"
       },
       {
        "b": "Navarro / Di Nenno",
@@ -100,8 +100,8 @@
        "a": "Bautista / Bergamini",
        "sa": 11,
        "court": "Caliente",
-       "live": true,
-       "score": "5-7 6-4 5-3"
+       "score": "5-7 6-4 6-3",
+       "w": "a"
       },
       {
        "court": "Caliente",
@@ -128,7 +128,10 @@
      "name": "Semifinales",
      "day": "Sábado 28 nov · desde las 16:00",
      "matches": [
-      {},
+      {
+       "b": "Bautista / Bergamini",
+       "sb": 11
+      },
       {
        "a": "Libaak / Alfonso",
        "sa": 9,
