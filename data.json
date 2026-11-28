@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T20:55:59-06:00",
+ "updated": "2026-11-27T21:01:45-06:00",
  "draws": {
   "m": {
-   "status": "Cuartos · Viernes 27 nov",
+   "status": "Cuartos en juego",
    "rounds": [
     {
      "key": "r16",
@@ -99,7 +99,7 @@
        "a": "Bautista / Bergamini",
        "sa": 11,
        "court": "Caliente",
-       "time": "Comienza pronto"
+       "live": true
       },
       {
        "court": "Caliente",
@@ -413,7 +413,7 @@
        "sb": 9,
        "a": "Brea / Triay",
        "sa": 1,
-       "score": "6-2 0-0",
+       "score": "6-2 1-1",
        "live": true
       },
       {
