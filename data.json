@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T21:19:05-06:00",
+ "updated": "2026-11-27T21:25:20-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -100,7 +100,7 @@
        "sa": 11,
        "court": "Caliente",
        "live": true,
-       "score": "1-2"
+       "score": "2-2"
       },
       {
        "court": "Caliente",
@@ -414,7 +414,7 @@
        "sb": 9,
        "a": "Brea / Triay",
        "sa": 1,
-       "score": "6-2 3-3",
+       "score": "6-2 4-3",
        "live": true
       },
       {
