@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-27T19:46:43-06:00",
+ "updated": "2026-11-27T19:52:29-06:00",
  "draws": {
   "m": {
-   "status": "Cuartos en juego",
+   "status": "Cuartos · Viernes 27 nov",
    "rounds": [
     {
      "key": "r16",
@@ -116,8 +116,8 @@
        "sa": 12,
        "b": "Lebrón / Augsburger",
        "sb": 2,
-       "score": "6-2 6-7 6-6",
-       "live": true
+       "score": "6-2 6-7 7-6 0-0",
+       "time": "2º turno"
       }
      ]
     },
@@ -417,7 +417,7 @@
        "sa": 5,
        "b": "Calvo / Fernández",
        "sb": 4,
-       "score": "2-1",
+       "score": "2-2",
        "live": true
       },
       {
