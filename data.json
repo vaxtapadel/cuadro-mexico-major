@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T22:51:59-06:00",
+ "updated": "2026-11-27T22:57:45-06:00",
  "draws": {
   "m": {
    "status": "Cuartos en juego",
@@ -100,7 +100,7 @@
        "sa": 11,
        "court": "Caliente",
        "live": true,
-       "score": "5-7 6-4 0-1"
+       "score": "5-7 6-4 1-1"
       },
       {
        "court": "Caliente",
@@ -323,7 +323,7 @@
    ]
   },
   "w": {
-   "status": "Cuartos en juego",
+   "status": "Semifinales · Sábado 28 nov",
    "rounds": [
     {
      "key": "r16",
@@ -414,8 +414,8 @@
        "sb": 9,
        "a": "Brea / Triay",
        "sa": 1,
-       "score": "6-2 4-6 6-5",
-       "live": true
+       "score": "6-2 4-6 7-5",
+       "w": "a"
       },
       {
        "court": "Caliente",
@@ -453,7 +453,11 @@
      "matches": [
       {
        "b": "Calvo / Fernández",
-       "sb": 4
+       "sb": 4,
+       "a": "Brea / Triay",
+       "sa": 1,
+       "court": "Estadio",
+       "time": "16:00"
       },
       {
        "b": "Josemaría / González",
@@ -461,7 +465,7 @@
        "a": "Sánchez / Ustero",
        "sa": 3,
        "court": "Estadio",
-       "time": "16:00"
+       "time": "2º turno"
       }
      ]
     },
