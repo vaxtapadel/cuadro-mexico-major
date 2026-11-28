@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-28T00:12:50-06:00",
+ "updated": "2026-11-28T00:18:37-06:00",
  "draws": {
   "m": {
-   "status": "Cuartos · Viernes 27 nov",
+   "status": "Semifinales · Sábado 28 nov",
    "rounds": [
     {
      "key": "r16",
@@ -91,7 +91,8 @@
        "sa": 1,
        "b": "Valenzuela / Gil",
        "court": "Estadio",
-       "score": "6-4 6-2 0-0"
+       "score": "6-4 6-2",
+       "w": "a"
       },
       {
        "b": "Navarro / Di Nenno",
@@ -129,7 +130,11 @@
      "matches": [
       {
        "b": "Bautista / Bergamini",
-       "sb": 11
+       "sb": 11,
+       "a": "Tapia / Coello",
+       "sa": 1,
+       "court": "Estadio",
+       "time": "16:00"
       },
       {
        "a": "Libaak / Alfonso",
@@ -137,7 +142,7 @@
        "b": "Jofre / Esbrí",
        "sb": 12,
        "court": "Estadio",
-       "time": "16:00"
+       "time": "2º turno"
       }
      ]
     },
